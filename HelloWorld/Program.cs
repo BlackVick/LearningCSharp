@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelloWorld.Models;
+using System;
 
 namespace HelloWorld
 {
@@ -7,20 +8,15 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            var number = 2;
-            var numberStart = 2;
-            var total = 20.76f;
-            var character = 'A';
-            var name = "Ayodeji";
-            var isWorking = true;
+            var user = new User();
+            user.firstName = "Elias";
+            user.lastName = "Walker";
+            user.age = 27;
+            user.weight = 62.7f;
+            user.height = 5.11f;
 
-
-            Console.WriteLine(number);
-            Console.WriteLine(numberStart);
-            Console.WriteLine(total);
-            Console.WriteLine(character);
-            Console.WriteLine(name);
-            Console.WriteLine(isWorking);
+            //introduce user
+            user.IntroduceUser();
         }
     }
 }

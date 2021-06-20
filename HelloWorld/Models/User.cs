@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HelloWorld.Models
 {
-    class User
+    public class User
     {
 
         public string firstName;
