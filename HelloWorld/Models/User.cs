@@ -15,7 +15,8 @@ namespace HelloWorld.Models
 
         public void IntroduceUser()
         {
-            Console.WriteLine("My name is " + firstName + " " + lastName + "\nI am " + age + " years old\nI am " + height + "ft tall and " + weight + "kg in weight.");
+            var aboutMe = string.Format("My name is {0} {1}, \nI am {2} years old. \nI am {3} ft tall and {4} kg in weight", firstName, lastName, age, height, weight);
+            Console.WriteLine(aboutMe);
         }
 
     }
